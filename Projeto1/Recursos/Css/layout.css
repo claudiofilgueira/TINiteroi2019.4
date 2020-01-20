@@ -55,8 +55,20 @@ h1{
 
 }
 p{
-    color: darkred;
+    color: #ff2300;
+    text-indent: 35px;/*Faz o recuo da primeira linha*/
+    text-align: justify;/*Justifica o texto*/
+    margin-bottom: 10px;
+    line-height: 1.2em;
 }
+p:first-of-type{ /*first-of-type define uma regra para o primeiro filho de um determinado tipo. Nesse caso <p>*/
+    margin-top: 15px; 
+}
+p::selection{
+    background-color: #000;
+    color: #fff;
+}
+
 h2{
     color: darkred;
     font-size: 1.5em;
@@ -101,13 +113,48 @@ a:hover{
 img{
     max-width: 100%;
 }
-#teste{
-    width: 150px;
-    height: 150px;
-    background-image: url(../img/banner.png);
-    background-position: -20px -50px;
+.imagem{
+    width: 350px;
+    height: 350px;
+    background-position: -20px -26px;
     border-radius: 50%;
+    box-shadow: 15px 15px 20px #ccc;
+    background-repeat: no-repeat;
+   
 }
+#barTender{
+    background-image: url(http://www.registrodiario.com/arquivos/noticias/5599/57314beb6c49ff433ed1015b324367dc.jpg);
+}
+
+#estetica{
+    background-image: url("https://www.rj.senac.br/wp-content/uploads/2017/05/tecnico-em-estetica-2-377x377.jpg");
+}
+section{
+    
+    width: 100%;
+    min-height: 450px;
+}
+#sBarTender div#barTender, #sEstetica div#estetica{
+    float: left;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+#sBarTender h2{
+    
+    margin-top: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
  
