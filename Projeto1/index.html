@@ -3,65 +3,27 @@
 <head>
     <title>Cursos Senac</title>
     <meta charset="utf-8">
-    <style>
-        #container{
-            width: 960px;
-            height: auto;
-            margin: 0 auto;
-            
-        }
-        p{
-            color: darkred;
-        }
-        h2{
-            color: darkred;
-        }
-        
-        a{
-            text-decoration: none; /*Tira o sublinhado de todos elementos <a>*/
-            color: orange; /*Define a cor do texto do elemento <a>*/
-        }
-        nav{
-            
-            height: 60px;
-        }
-        li{
-            
-            list-style: none;/*Retira os marcadores da lista*/
-            border: solid 1px orange; /*Definindo uma borda sólida, laranja e de 1px de espessura*/
-            float: left;/*Faz com que um elemento do tipo BLOCK fique um ao lado do outro
-            "flutuando" à esquerda do elemento subsequente*/
-            width: 150px;/*Define a largura de um elemento*/
-            height: 40px;/*Define a altura de um elemento*/
-            line-height: 2.5em; /*Define a altura de uma linha*/
-            text-align: center;/*Centraliza o texto*/
-            border-radius: 25px 0; /*Trabalhar o arredondamento dos cantos das bordas*/
-            margin-left: 5px;/*Aumenta a distância entre os elementos em 5px à esquerda*/
-            text-transform: uppercase;/*Coloca todas as letras em maiúsculo*/
-            font-weight: bold;/*Negrita os caracteres*/
-        }
-        
-        a{
-            width: 150px;
-            height: 40px;
-            display: block;/*Transforma um elemento inline em block*/
-            border-radius: 25px 0;
-        }
-        a:hover{
-            
+    <link rel="stylesheet" type="text/css" href="Recursos/Css/layout.css">
+     <style>
+         a#ativo{
             background-color: orange;
             color: white;
         }
-      
+        a#ativo:hover{
+
+            background-color: white;
+            color: orange;
+        }
     </style>
 </head>
 <body>
+    
     <div id="container">
         <img src="https://assets.b9.com.br/wp-content/uploads/2012/08/023.jpg" alt="Logo do Senac" width="250">
         <img src="Recursos/img/banner.png" alt="Faculdade Senac Faça a Sua Inscrição">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" id="ativo">Home</a></li>
                 <li><a href="cursos.html">Cursos</a></li>
                 <li><a href="unidades.html">Unidades</a></li>
                 <li><a href="faleConosco.html">Fale Conosco</a></li>
@@ -85,6 +47,9 @@
 
         <p>Um setor que cresce acima do PIB nacional, o mercado de beleza demanda profissionais capacitados e inovadores. O curso Técnico em Estética do Senac RJ traz um conteúdo abrangente e abre muitas possibilidades de trabalho tanto autônomo como para empresas do ramo.</p>
 
+        
+        <div id="teste"></div>
+        
         <footer>
 
             <address>Rua Almirante Teffé 680 - Centro de Niterói - RJ</address>
